@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bill.css">
+
+    <title>Bill Reminder</title>
+</head>
+<body>
+    <h1 class="title"><span class="title-text">Bill Reminder</span></h1>
+    <div class="container">
+        <div class="content">
+            <div class="image">
+                <img src="img/bill1.avif" alt="Image">
+            </div>
+            <div class="form">
+                
+        <form id="billForm">
+            <label for="billName">Bill Name:</label>
+            <input type="text" id="billName" name="billName" required>
+            
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate" name="dueDate" required>
+            
+            <button type="submit">Set Reminder</button>
+        </form>
+        <div id="reminderList" class="reminder-list"></div>
+    </div>
+    <script src="bill.js"></script>
+</body>
+</html>
